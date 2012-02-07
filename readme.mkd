@@ -1,1 +1,4 @@
 Project Euler
+=============
+
+On my quest to learn F# this is where I solve the project euler problems!
