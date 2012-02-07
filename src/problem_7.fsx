@@ -1,4 +1,4 @@
-﻿//Naive sieve
+﻿//Naive implementation
 #time;;
 open System
 
