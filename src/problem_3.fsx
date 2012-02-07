@@ -22,6 +22,6 @@ let largestPrimeFactorOf x =
 
     findLargestPrimeFactor upperBound
 
-largestPrimeFactorOf 600851475143L
+let answer = largestPrimeFactorOf 600851475143L
 
 
