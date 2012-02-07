@@ -9,7 +9,7 @@ let isPrime number =
     |> Seq.exists (fun x -> if (number % x = 0L) then true else false)
     |> not
 
-let largestPrimeFactor x =
+let largestPrimeFactorOf x =
     let max = x
     let upperBound = int64(Math.Sqrt(float(x)))
     let rec findLargestPrimeFactor x =
@@ -22,6 +22,6 @@ let largestPrimeFactor x =
 
     findLargestPrimeFactor upperBound
 
-largestPrimeFactor 600851475143L
+largestPrimeFactorOf 600851475143L
 
 
