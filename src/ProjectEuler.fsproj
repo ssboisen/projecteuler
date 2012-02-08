@@ -39,7 +39,7 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.fs" />
+    <Compile Include="ProjectEuler.fs" />
     <None Include="problem_1.fsx" />
     <None Include="problem_2.fsx" />
     <None Include="problem_3.fsx" />
