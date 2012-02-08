@@ -1,21 +1,14 @@
-﻿//The prime factors of 13195 are 5, 7, 13 and 29.
-//
-//What is the largest prime factor of the number 600851475143 ?
+﻿#light
+#load "ProjectEuler.fs"
 open System
-
-let isPrime number =
-    let bound = int64(Math.Sqrt(float(number)))
-    seq { 2L .. bound }
-    |> Seq.exists (fun x -> if (number % x = 0L) then true else false)
-    |> not
 
 let largestPrimeFactorOf x =
     let max = x
     let upperBound = int64(Math.Sqrt(float(x)))
     let rec findLargestPrimeFactor x =
         match x with
-            | x when x % 2L = 0L || max % x <> 0L -> findLargestPrimeFactor (x-1L)
-            | x ->  let isPrime = isPrime x
+            | x when max % x <> 0L -> findLargestPrimeFactor (x-1L)
+            | x ->  let isPrime = ProjectEuler.isPrime x
                     match isPrime with
                         | true when max % x = 0L -> x
                         | _ -> findLargestPrimeFactor (x-1L)

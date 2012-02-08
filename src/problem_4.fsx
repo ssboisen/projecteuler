@@ -1,4 +1,5 @@
-﻿open System
+﻿#light
+open System
 
 let largestPalindromicNumber n =
     let isPalindromic x = 

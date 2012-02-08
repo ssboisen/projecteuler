@@ -1,4 +1,4 @@
-﻿
+﻿#light
 let problem6 =
     let seq = seq { 1..100 }
     let square = fun x -> x * x

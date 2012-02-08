@@ -1,4 +1,5 @@
-﻿#time;;
+﻿#light
+#time
 let square x = x * x
 let answer = seq { for a in {1..1000} do
                     for b in {a..1000} do
