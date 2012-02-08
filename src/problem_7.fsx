@@ -33,4 +33,4 @@ let primes =
         grow()
       a.[n];;
 
-let result = primes 10000
+let answer = primes 10000
