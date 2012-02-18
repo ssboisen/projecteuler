@@ -21,7 +21,7 @@ let number = "73167176531330624919225119674426574742355349194934\
               05886116467109405077541002256983155200055935729725\
               71636269561882670428252483600823257530420752963450"
 
-let numbers = number |> Seq.map (Char.GetNumericValue >> int) |> Seq.cache
+let numbers = number |> Seq.map (int Char.GetNumericValue >> int) |> Seq.cache
 
 let answer = numbers 
                 |> Seq.windowed 5
