@@ -24,6 +24,6 @@ let primes =
     fun n ->
       while n >= a.Count do
         grow()
-      a.[n];;
+      a.[n]
 
 primes 5000000

@@ -1,5 +1,4 @@
-﻿#light
-#load "ProjectEuler.fs"
+﻿#load "ProjectEuler.fs"
 open System
 
 let largestPrimeFactorOf x =
